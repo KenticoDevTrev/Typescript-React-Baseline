@@ -4,7 +4,11 @@ This package is an initial setup of either a react app or just typescript.  Mean
 It includes the starting point of Typescript, React, and Webpack, with minification / mapping, sample files and a bundle.
 
 ## First Time Startup
-Make sure you have [https://www.npmjs.com/get-npm](npm installed) on your computer globally.  Doesn't hurt to also have react installed globally (run these from powershell)
+Make sure you have [https://www.npmjs.com/get-npm](npm installed) on your computer globally.
+
+When you have your folder, open a powershell at the root of your folder and type `npm install` which will restore the `node_modules` folder.
+
+While these commands shouldn't be necessary, it doesn't hurt to also have react installed globally (run these from powershell)
 
 `npm install --global typescript`
 
@@ -19,8 +23,6 @@ Make sure you have [https://www.npmjs.com/get-npm](npm installed) on your comput
 `npm install --global webpack-cli`
 
 `npm install concurrently --save`
-
-When you have your folder, open a powershell at the root of your folder and type `npm install` which will restore the `node_modules` folder.
 
 ## Modifying / Removing Applications
 This baseline has 2 sample applications (1 Typescript Hello World and 1 React Hello World), along with a webpack.config.js to bundle them.
