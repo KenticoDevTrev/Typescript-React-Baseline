@@ -14,7 +14,8 @@
         "dom"
       ]
     },
-    "include": [ "typescript/samplehelper/src/**/*", "./react/sampleapp/src/**/*" ],
+    "include": [ "typescript/samplehelper/src/**/*",
+                  "react/sampleapp/src/**/*" ],
     "compileOnSave": true,
     "exclude": [
       "node_modules",
