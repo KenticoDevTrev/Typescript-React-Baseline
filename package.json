@@ -1,0 +1,40 @@
+{
+  "name": "baseline",
+  "version": "1.0.0",
+  "description": "Baseline Typescript Application",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "vscode:prepublish": "webpack --config webpack.config.js --mode production && webpack --config ./react/sampleapp/webpack.config.js--mode production && webpack --config ./typescript/samplehelper/webpack.config.js --mode production",
+    "test-compile": "tsc -p ./",
+
+    "webpack": "webpack --config webpack.config.js --mode development && webpack --config ./react/sampleapp/webpack.config.js --mode development && webpack --config ./typescript/samplehelper/webpack.config.js --mode development",
+    "webpack-dev": "concurrently \"webpack --config webpack.config.js --mode development --watch\" \"webpack --config ./react/sampleapp/webpack.config.js --mode development --watch\" \"webpack --config ./typescript/samplehelper/webpack.config.js --mode development --watch\"",
+    
+    "webpack-bundle": "webpack --config webpack.config.js --mode development && webpack --config ./react/sampleapp/webpack.config.js --mode development && webpack --config ./typescript/samplehelper/webpack.config.js --mode development",
+    "webpack-bundle-dev": "webpack --config webpack.config.js --mode development --watch",
+    
+    "webpack-react": "webpack --config ./react/sampleapp/webpack.config.js --mode development",
+    "webpack-react-dev": "webpack --config ./react/sampleapp/webpack.config.js --mode development --watch",
+    
+    "webpack-typescript": "webpack --config ./typescript/samplehelper/webpack.config.js --mode development",
+    "webpack-typescript-dev": "webpack --config ./typescript/samplehelper/webpack.config.js --mode development --watch"
+  },
+  "devDependencies": {
+    "@types/core-js": "^2.5.3",
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.4",
+    "concurrently": "^6.1.0",
+    "source-map-loader": "^2.0.1",
+    "terser-webpack-plugin": "^5.1.1",
+    "ts-loader": "^9.1.2",
+    "typescript": "^4.2.4",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

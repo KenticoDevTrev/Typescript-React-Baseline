@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "noImplicitAny": false,
+      "noEmitOnError": true,
+      "removeComments": false,
+      "sourceMap": true,
+      "module": "commonjs",
+      "target": "es5",
+      "jsx": "react",
+      "lib": [
+        "es2015",
+        "es2015.promise",
+        "es2015.iterable",
+        "dom"
+      ]
+    },
+    "include": [ "typescript/samplehelper/src/**/*", "./react/sampleapp/src/**/*" ],
+    "compileOnSave": true,
+    "exclude": [
+      "node_modules",
+      "wwwroot"
+    ]
+} 
