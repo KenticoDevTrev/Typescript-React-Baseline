@@ -4,7 +4,7 @@ This package is an initial setup of either a react app or just typescript.  Mean
 It includes the starting point of Typescript, React, and Webpack, with minification / mapping, sample files and a bundle.
 
 ## First Time Startup
-Make sure you have [https://www.npmjs.com/get-npm](npm installed) on your computer globally.
+Make sure you have [npm installed](https://www.npmjs.com/get-npm) on your computer globally.
 
 When you have your folder, open a powershell at the root of your folder and type `npm install` which will restore the `node_modules` folder.
 
