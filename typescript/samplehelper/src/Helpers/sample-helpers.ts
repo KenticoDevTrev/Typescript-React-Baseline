@@ -1,13 +1,13 @@
 export class SampleHelper {
-    static Hello() : string {
+    static hello() : string {
         return "Hello";
     }
 
-    static World() : string {
+    static world() : string {
         return "World";
     }
 
-    static async PostRequest<T>(Url: string, Data?: any): Promise<T> {
+    static async postRequest<T>(Url: string, Data?: any): Promise<T> {
         const response = await fetch(Url, {
             method: "POST",
             mode: 'cors',
@@ -21,7 +21,7 @@ export class SampleHelper {
         return await response.json();
     }
 
-    static async GetRequest<T>(Url: string, Data?: any): Promise<T> {
+    static async getRequest<T>(Url: string, Data?: any): Promise<T> {
         const response = await fetch(Url, {
             method: "GET",
             mode: 'cors',

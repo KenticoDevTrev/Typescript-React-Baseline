@@ -8,22 +8,6 @@ Make sure you have [https://www.npmjs.com/get-npm](npm installed) on your comput
 
 When you have your folder, open a powershell at the root of your folder and type `npm install` which will restore the `node_modules` folder.
 
-While these commands shouldn't be necessary, it doesn't hurt to also have react installed globally (run these from powershell)
-
-`npm install --global typescript`
-
-`npm install react`
-
-`npm install react-dom`
-
-`npm install ts-node`
-
-`npm install --global webpack`
-
-`npm install --global webpack-cli`
-
-`npm install concurrently --save`
-
 ## Modifying / Removing Applications
 This baseline has 2 sample applications (1 Typescript Hello World and 1 React Hello World), along with a webpack.config.js to bundle them.
 
