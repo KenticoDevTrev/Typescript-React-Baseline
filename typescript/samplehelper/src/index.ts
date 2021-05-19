@@ -1,4 +1,4 @@
 import {SampleHelper} from './Helpers/sample-helpers'
 
-(window as any).MyHelper = SampleHelper;
+window.MyHelper = SampleHelper;
 alert("hello");

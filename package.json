@@ -8,16 +8,12 @@
   "scripts": {
     "vscode:prepublish": "webpack --config webpack.config.js --mode production && webpack --config ./react/sampleapp/webpack.config.js--mode production && webpack --config ./typescript/samplehelper/webpack.config.js --mode production",
     "test-compile": "tsc -p ./",
-
     "webpack": "webpack --config webpack.config.js --mode development && webpack --config ./react/sampleapp/webpack.config.js --mode development && webpack --config ./typescript/samplehelper/webpack.config.js --mode development",
     "webpack-dev": "concurrently \"webpack --config webpack.config.js --mode development --watch\" \"webpack --config ./react/sampleapp/webpack.config.js --mode development --watch\" \"webpack --config ./typescript/samplehelper/webpack.config.js --mode development --watch\"",
-    
     "webpack-bundle": "webpack --config webpack.config.js --mode development && webpack --config ./react/sampleapp/webpack.config.js --mode development && webpack --config ./typescript/samplehelper/webpack.config.js --mode development",
     "webpack-bundle-dev": "webpack --config webpack.config.js --mode development --watch",
-    
     "webpack-react": "webpack --config ./react/sampleapp/webpack.config.js --mode development",
     "webpack-react-dev": "webpack --config ./react/sampleapp/webpack.config.js --mode development --watch",
-    
     "webpack-typescript": "webpack --config ./typescript/samplehelper/webpack.config.js --mode development",
     "webpack-typescript-dev": "webpack --config ./typescript/samplehelper/webpack.config.js --mode development --watch"
   },
@@ -26,6 +22,7 @@
     "@types/react": "^17.0.5",
     "@types/react-dom": "^17.0.4",
     "concurrently": "^6.1.0",
+    "dotenv": "^9.0.2",
     "source-map-loader": "^2.0.1",
     "terser-webpack-plugin": "^5.1.1",
     "ts-loader": "^9.1.2",

@@ -48,3 +48,6 @@ These are the 'compilers' of your react/typescript, this will take the ts file a
 It uses `source-map` for it's creation of source mapping, and `TerserPlugin` to minify.
 
 The `webpack.config.js` at the root is a bundler which bundles them all together into a single bundle.min.js file.  Otherwise each application has it's own `webpack.config.js`
+
+## .env file
+The webpack.config.js use the `dotenv` package to load the environment variable from the .env file.  It is included in this repo, but it is recommended you exclude this file from your source code, and during your CI/CD build pipeline you recreate this file with the line `NODE_ENV = development`, this way you can adjust the minification and sourcemap creation for production.
